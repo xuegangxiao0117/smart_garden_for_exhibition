@@ -27,7 +27,7 @@
         "installed_version": "v1.5.0",
         "iot_class": null,
         "last_commit": "c185504",
-        "last_updated": "2020-10-12T10:12:46Z",
+        "last_updated": "2020-10-16T21:17:33Z",
         "last_version": "v1.5.0",
         "manifest_name": null,
         "new": false,
@@ -40,12 +40,12 @@
             "v1.4.5",
             "v1.4.4"
         ],
-        "pushed_at": "2020-10-12T10:12:46",
+        "pushed_at": "2020-10-16T21:17:33",
         "releases": true,
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 152,
+        "stargazers_count": 153,
         "topics": [],
         "zip_release": false
     },

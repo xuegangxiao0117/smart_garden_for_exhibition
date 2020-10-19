@@ -10,7 +10,7 @@
         "description": "\ud83d\udcd0 Home Assistant Card: Similar to vertical/horizontal-stack, but removes card borders",
         "domain": "",
         "domains": [],
-        "downloads": 12850,
+        "downloads": 13004,
         "file_name": "vertical-stack-in-card.js",
         "filename": "vertical-stack-in-card.js",
         "first_install": false,
@@ -45,7 +45,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 439,
+        "stargazers_count": 442,
         "topics": [
             "hacktoberfest",
             "hacktoberfest2020",

@@ -766,7 +766,7 @@
             "category": "plugin",
             "description": "\ud83d\udcd0 Home Assistant Card: Similar to vertical/horizontal-stack, but removes card borders",
             "domain": "",
-            "downloads": 12850,
+            "downloads": 13004,
             "first_install": false,
             "full_name": "ofekashery/vertical-stack-in-card",
             "installed": true,
@@ -783,7 +783,7 @@
             },
             "selected_tag": null,
             "show_beta": false,
-            "stars": 439,
+            "stars": 442,
             "topics": [
                 "hacktoberfest",
                 "hacktoberfest2020",
@@ -1025,7 +1025,7 @@
             },
             "selected_tag": null,
             "show_beta": false,
-            "stars": 357,
+            "stars": 360,
             "topics": [],
             "version_installed": "16"
         },
@@ -1152,14 +1152,14 @@
             "category": "plugin",
             "description": "\u2747\ufe0f Lovelace button-card for home assistant",
             "domain": "",
-            "downloads": 22324,
+            "downloads": 22754,
             "first_install": false,
             "full_name": "custom-cards/button-card",
             "installed": true,
             "installed_commit": "93a7f53",
-            "last_commit": "93a7f53",
+            "last_commit": "c5310e5",
             "last_release_tag": "3.3.6",
-            "last_updated": "2020-10-12T20:33:16Z",
+            "last_updated": "2020-10-17T17:03:28Z",
             "name": "button-card",
             "new": false,
             "repository_manifest": {
@@ -1170,7 +1170,7 @@
             },
             "selected_tag": null,
             "show_beta": false,
-            "stars": 539,
+            "stars": 541,
             "topics": [
                 "home-assistant",
                 "home-assistant-custom",
@@ -1521,7 +1521,7 @@
             "category": "plugin",
             "description": "Minimalistic graph card for Home Assistant Lovelace UI",
             "domain": "",
-            "downloads": 25532,
+            "downloads": 26131,
             "first_install": false,
             "full_name": "kalkih/mini-graph-card",
             "installed": true,
@@ -1534,7 +1534,7 @@
             "repository_manifest": {},
             "selected_tag": null,
             "show_beta": false,
-            "stars": 1107,
+            "stars": 1109,
             "topics": [
                 "automation",
                 "custom",
@@ -2304,28 +2304,6 @@
             "topics": [],
             "version_installed": null
         },
-        "162377669": {
-            "authors": [],
-            "category": "plugin",
-            "description": "Dual Thermostat Lovelace Card",
-            "domain": "",
-            "downloads": 0,
-            "first_install": true,
-            "full_name": "enriqg9/dual-thermostat",
-            "installed": false,
-            "installed_commit": null,
-            "last_commit": null,
-            "last_release_tag": "0.3.0",
-            "last_updated": 0,
-            "name": "dual-thermostat",
-            "new": false,
-            "repository_manifest": {},
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 50,
-            "topics": [],
-            "version_installed": null
-        },
         "162468030": {
             "authors": [],
             "category": "theme",
@@ -3077,14 +3055,14 @@
             "category": "integration",
             "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
             "domain": "hacs",
-            "downloads": 35804,
+            "downloads": 38602,
             "first_install": false,
             "full_name": "hacs/integration",
             "installed": true,
             "installed_commit": null,
-            "last_commit": "10ba685",
+            "last_commit": "827ba37",
             "last_release_tag": "1.6.0",
-            "last_updated": "2020-10-09T05:48:35Z",
+            "last_updated": "2020-10-17T11:16:48Z",
             "name": "hacs",
             "new": false,
             "repository_manifest": {
@@ -3097,7 +3075,7 @@
             },
             "selected_tag": null,
             "show_beta": false,
-            "stars": 1319,
+            "stars": 1325,
             "topics": [
                 "community",
                 "hacktoberfest",
@@ -4265,7 +4243,7 @@
             "repository_manifest": {},
             "selected_tag": null,
             "show_beta": false,
-            "stars": 78,
+            "stars": 79,
             "topics": [],
             "version_installed": "1.2.5"
         },
@@ -5196,13 +5174,13 @@
             "installed_commit": "c185504",
             "last_commit": "c185504",
             "last_release_tag": "v1.5.0",
-            "last_updated": "2020-10-12T10:12:46Z",
+            "last_updated": "2020-10-16T21:17:33Z",
             "name": "weather-card",
             "new": false,
             "repository_manifest": {},
             "selected_tag": null,
             "show_beta": false,
-            "stars": 152,
+            "stars": 153,
             "topics": [],
             "version_installed": "v1.5.0"
         },
@@ -9038,7 +9016,7 @@
             "category": "plugin",
             "description": "\ud83d\udca1 A Lovelace custom card for RGB lights",
             "domain": "",
-            "downloads": 1111,
+            "downloads": 1373,
             "first_install": false,
             "full_name": "bokub/rgb-light-card",
             "installed": true,
@@ -18100,6 +18078,36 @@
             ],
             "version_installed": null
         },
+        "279861920": {
+            "authors": [
+                "@yuval_mejahez"
+            ],
+            "category": "integration",
+            "description": "ReversoTTS component for HomeAssistant",
+            "domain": "reversotts",
+            "downloads": 0,
+            "first_install": true,
+            "full_name": "rt400/ReversoTTS-HA",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": null,
+            "last_updated": 0,
+            "name": "reversotts",
+            "new": true,
+            "repository_manifest": {
+                "name": "Reverso TTS / tts",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 7,
+            "topics": [
+                "reversotts",
+                "tts"
+            ],
+            "version_installed": null
+        },
         "281214271": {
             "authors": [],
             "category": "plugin",
@@ -19498,6 +19506,42 @@
             ],
             "version_installed": null
         },
+        "292977334": {
+            "authors": [
+                "@fineemb"
+            ],
+            "category": "integration",
+            "description": "The Lynk&Co integration offers integration with the Lynk&Co cloud service",
+            "domain": "lynkco",
+            "downloads": 0,
+            "first_install": true,
+            "full_name": "fineemb/Lynk-Co",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": "v1.0",
+            "last_updated": 0,
+            "name": "lynkco",
+            "new": true,
+            "repository_manifest": {
+                "domains": [
+                    "device_tracker",
+                    "sensor",
+                    "binary_sensor"
+                ],
+                "homeassistant": "0.107",
+                "name": "Lynk&Co",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 0,
+            "topics": [
+                "hass",
+                "lynkco"
+            ],
+            "version_installed": null
+        },
         "293843053": {
             "authors": [
                 "@danielhiversen"
@@ -19829,6 +19873,90 @@
             ],
             "version_installed": null
         },
+        "299875200": {
+            "authors": [
+                "@toreamun"
+            ],
+            "category": "integration",
+            "description": "Home Assistant integration for Victor Smart-Kill WI-FI electronic mouse and rat traps from VictorPest.com.",
+            "domain": "victorsmartkill",
+            "downloads": 0,
+            "first_install": true,
+            "full_name": "toreamun/victorsmartkill-homeassistant",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": "0.0.11",
+            "last_updated": 0,
+            "name": "victorsmartkill",
+            "new": true,
+            "repository_manifest": {
+                "domains": [
+                    "binary_sensor",
+                    "sensor"
+                ],
+                "hacs": "0.24.0",
+                "homeassistant": "0.115.0",
+                "iot_class": "Cloud Polling",
+                "name": "Victor Smart-Kill",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 1,
+            "topics": [
+                "hacs",
+                "home-assistant",
+                "homeassistant-integration",
+                "mouse",
+                "python-library",
+                "rat",
+                "trap",
+                "victor"
+            ],
+            "version_installed": null
+        },
+        "299967654": {
+            "authors": [
+                "@willholdoway"
+            ],
+            "category": "integration",
+            "description": "This is a custom component to allow control of HifiberryOS devices in Home Assistant using the audiocontrol2 REST API.",
+            "domain": "hifiberry",
+            "downloads": 0,
+            "first_install": true,
+            "full_name": "willholdoway/hifiberry",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": null,
+            "last_updated": 0,
+            "name": "hifiberry",
+            "new": true,
+            "repository_manifest": {
+                "domains": [
+                    "media_player"
+                ],
+                "iot_class": "Local Polling",
+                "name": "Hifiberry",
+                "render_readme": "true"
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 2,
+            "topics": [
+                "hacs",
+                "hassio",
+                "hifiberry",
+                "home-assistant",
+                "home-automation",
+                "internet-of-things",
+                "iot",
+                "media-player",
+                "python"
+            ],
+            "version_installed": null
+        },
         "300358676": {
             "authors": [
                 "@JurajNyiri"
@@ -19858,6 +19986,113 @@
                 "hacktoberfest",
                 "ptz",
                 "tapo"
+            ],
+            "version_installed": null
+        },
+        "301916553": {
+            "authors": [
+                "@troykelly"
+            ],
+            "category": "integration",
+            "description": "Unofficial Amber Electric integration for Home Assistant",
+            "domain": "amber_electric",
+            "downloads": 0,
+            "first_install": true,
+            "full_name": "troykelly/hacs-amberelectric",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": "v0.0.12",
+            "last_updated": 0,
+            "name": "amber_electric",
+            "new": true,
+            "repository_manifest": {
+                "country": "AU",
+                "domains": [
+                    "sensor"
+                ],
+                "homeassistant": "0.116.0",
+                "iot_class": [
+                    "Cloud Polling"
+                ],
+                "name": "Amber Electric"
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 0,
+            "topics": [
+                "amber-electric",
+                "electricity-market",
+                "electricity-pricing",
+                "home-assistant",
+                "home-automation"
+            ],
+            "version_installed": null
+        },
+        "303101606": {
+            "authors": [],
+            "category": "plugin",
+            "description": "Hides the header and sidebar \ud83d\ude48 ",
+            "domain": "",
+            "downloads": 0,
+            "first_install": true,
+            "full_name": "matt8707/kiosk-mode",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": null,
+            "last_updated": 0,
+            "name": "kiosk-mode",
+            "new": true,
+            "repository_manifest": {
+                "name": "Kiosk Mode",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 8,
+            "topics": [
+                "home-assistant",
+                "kiosk",
+                "lovelace"
+            ],
+            "version_installed": null
+        },
+        "303857065": {
+            "authors": [],
+            "category": "plugin",
+            "description": "Show battery states or attributes with dynamic icon on entity rows in Home Assistant's Lovelace UI",
+            "domain": "",
+            "downloads": 363,
+            "first_install": true,
+            "full_name": "benct/lovelace-battery-entity-row",
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": "v1.0.0",
+            "last_updated": 0,
+            "name": "lovelace-battery-entity-row",
+            "new": true,
+            "repository_manifest": {
+                "filename": "battery-entity-row.js",
+                "name": "Battery Entity Row",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 2,
+            "topics": [
+                "attribute",
+                "battery",
+                "card",
+                "entity",
+                "entity-rows",
+                "hacs",
+                "home-assistant",
+                "home-assistant-frontend",
+                "lovelace",
+                "lovelace-ui",
+                "state"
             ],
             "version_installed": null
         },

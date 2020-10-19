@@ -10,7 +10,7 @@
         "description": "Minimalistic graph card for Home Assistant Lovelace UI",
         "domain": "",
         "domains": [],
-        "downloads": 25532,
+        "downloads": 26131,
         "file_name": "mini-graph-card-bundle.js",
         "filename": "",
         "first_install": false,
@@ -31,7 +31,7 @@
         "last_version": "v0.9.4",
         "manifest_name": null,
         "new": false,
-        "open_issues": 97,
+        "open_issues": 98,
         "persistent_directory": null,
         "published_tags": [
             "v0.9.4",
@@ -45,7 +45,7 @@
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 1107,
+        "stargazers_count": 1109,
         "topics": [
             "automation",
             "custom",

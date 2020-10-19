@@ -31,7 +31,7 @@
         "last_version": "16",
         "manifest_name": null,
         "new": false,
-        "open_issues": 18,
+        "open_issues": 19,
         "persistent_directory": null,
         "published_tags": [
             "16",
@@ -45,7 +45,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 357,
+        "stargazers_count": 360,
         "topics": [],
         "zip_release": false
     },

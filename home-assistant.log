@@ -1,11 +1,36 @@
-2020-10-16 18:19:25 WARNING (SyncWorker_0) [homeassistant.util.yaml.loader] YAML file /config/configuration.yaml contains duplicate key "group". Check lines 8 and 329
-2020-10-16 18:19:25 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-10-16 18:19:26 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs
-2020-10-16 18:19:27 ERROR (MainThread) [homeassistant.config] Invalid config for [group]: Entity ID -sensor.foot_path_light -switch.foot_path_light is an invalid entity id for dictionary value @ data['group']['foot_path']['entities']. Got '-sensor.foot_path_light -switch.foot_path_light'
+2020-10-19 10:56:57 WARNING (SyncWorker_0) [homeassistant.util.yaml.loader] YAML file /config/configuration.yaml contains duplicate key "group". Check lines 8 and 329
+2020-10-19 10:56:57 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-10-19 10:56:58 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs
+2020-10-19 10:56:59 ERROR (MainThread) [homeassistant.config] Invalid config for [group]: Entity ID -sensor.foot_path_light -switch.foot_path_light is an invalid entity id for dictionary value @ data['group']['foot_path']['entities']. Got '-sensor.foot_path_light -switch.foot_path_light'
 Entity ID -sensor.green_house_co2 -sensor.soil_moisture -sensor.green_house_TVOC is an invalid entity id for dictionary value @ data['group']['green_house']['entities']. Got '-sensor.green_house_co2 -sensor.soil_moisture -sensor.green_house_TVOC'
 Entity ID -sensor.pond_temperature -sensor.tds is an invalid entity id for dictionary value @ data['group']['pond']['entities']. Got '-sensor.pond_temperature -sensor.tds'
 Entity ID -sensor.weather_station_temperature -sensor.weather_station_humidity -sensor.weather_station_uv is an invalid entity id for dictionary value @ data['group']['weather_station']['entities']. Got '-sensor.weather_station_temperature -sensor.weather_station_humidity -sensor.weather_station_uv'. (See /config/configuration.yaml, line 330). Please check the docs at https://www.home-assistant.io/integrations/group
-2020-10-16 18:19:27 ERROR (MainThread) [homeassistant.setup] Setup failed for group: Invalid config.
-2020-10-16 18:20:27 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: mqtt
-2020-10-16 18:20:27 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: timed out
-2020-10-16 18:20:32 ERROR (MainThread) [custom_components.hacs.factory] maykar/custom-header - Repository is archived.
+2020-10-19 10:56:59 ERROR (MainThread) [homeassistant.setup] Setup failed for group: Invalid config.
+2020-10-19 10:57:04 ERROR (MainThread) [homeassistant.components.updater] Error requesting Home Assistant update data: Cannot connect to host updater.home-assistant.io:443 ssl:default [Connect call failed ('172.31.255.254', 443)]
+2020-10-19 10:57:04 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/classic returned Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:default [Connect call failed ('172.31.255.254', 443)]
+2020-10-19 10:57:04 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 19 minutes
+2020-10-19 10:57:06 WARNING (MainThread) [frontend.js.latest.202008110] Icon mdi:periodic-table-co2 was renamed to mdi:molecule-co2, please change your config, it will be removed in version 0.115.
+2020-10-19 10:57:09 WARNING (MainThread) [homeassistant.setup] Setup of hacs is taking over 10 seconds.
+2020-10-19 10:57:28 ERROR (MainThread) [custom_components.hacs.custom_components.hacs.remaining_github_calls] Cannot connect to host api.github.com:443 ssl:default [Connect call failed ('172.31.255.254', 443)]
+2020-10-19 10:57:28 CRITICAL (MainThread) [custom_components.hacs] Your GitHub token is not valid
+2020-10-19 11:03:08 WARNING (MainThread) [frontend.js.latest.202008110] Icon mdi:periodic-table-co2 was renamed to mdi:molecule-co2, please change your config, it will be removed in version 0.115.
+2020-10-19 11:12:52 ERROR (MainThread) [custom_components.hacs.custom_components.hacs.remaining_github_calls] Cannot connect to host api.github.com:443 ssl:default [Connect call failed ('172.31.255.254', 443)]
+2020-10-19 11:12:52 CRITICAL (MainThread) [custom_components.hacs] Your GitHub token is not valid
+2020-10-19 11:16:09 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/classic returned Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:default [Connect call failed ('172.31.255.254', 443)]
+2020-10-19 11:16:09 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 19 minutes
+2020-10-19 11:17:15 WARNING (MainThread) [frontend.js.latest.202008110] Icon mdi:periodic-table-co2 was renamed to mdi:molecule-co2, please change your config, it will be removed in version 0.115.
+2020-10-19 11:20:03 WARNING (Thread-5) [homeassistant.components.mqtt] Disconnected from MQTT server 192.168.199.142:1883 (1)
+2020-10-19 11:20:03 WARNING (Thread-5) [homeassistant.components.mqtt] Disconnected from MQTT server 192.168.199.142:1883 (1)
+2020-10-19 11:28:24 ERROR (MainThread) [custom_components.hacs.custom_components.hacs.remaining_github_calls] Cannot connect to host api.github.com:443 ssl:default [Try again]
+2020-10-19 11:28:24 CRITICAL (MainThread) [custom_components.hacs] Your GitHub token is not valid
+2020-10-19 11:31:35 WARNING (zeroconf-ServiceBrowser__ipps._tcp.local.-_dkapi._tcp.local.-_esphomelib._tcp.local.-_bond._tcp.local.-_googlecast._tcp.local.-_ipp._tcp.local.-_axis-video._tcp.local.-_viziocast._tcp.local.-_miio._udp.local.-_api._udp.local.-_nut._tcp.local.-_daap._tcp.local.-_Volumio._tcp.local.-_spotify-connect._tcp.local.-_hap._tcp.local.-_wled._tcp.local.-_plugwise._tcp.local.-_printer._tcp.local.-_elg._tcp.local._260) [zeroconf] Error sending through socket 14
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/zeroconf/__init__.py", line 2834, in send
+    bytes_sent = s.sendto(packet, 0, (real_addr, port))
+OSError: [Errno 101] Network unreachable
+2020-10-19 11:35:14 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/classic returned Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:default [Try again]
+2020-10-19 11:35:14 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 18 minutes
+2020-10-19 11:44:00 ERROR (MainThread) [custom_components.hacs.custom_components.hacs.remaining_github_calls] Cannot connect to host api.github.com:443 ssl:default [Try again]
+2020-10-19 11:44:00 CRITICAL (MainThread) [custom_components.hacs] Your GitHub token is not valid
+2020-10-19 11:53:19 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/classic returned Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:default [Try again]
+2020-10-19 11:53:19 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 18 minutes
