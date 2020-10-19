@@ -19,8 +19,8 @@ The smart garden series of projects are for two educational exhibitions, based o
 ![image](https://github.com/xuegangxiao0117/smart_garden_for_exhibition/blob/master/images/chongqingEEE1.png)
 *重庆教育装备展用户交互界面  Chongqing educational equipment exhibition UI*
 
-![image]((https://github.com/xuegangxiao0117/smart_garden_for_exhibition/blob/master/images/chongqingEEE.png))
-![image]((https://github.com/xuegangxiao0117/smart_garden_for_exhibition/blob/master/images/chongqingEEE2.png))
+![image](https://github.com/xuegangxiao0117/smart_garden_for_exhibition/blob/master/images/chongqingEEE.png)
+![image](https://github.com/xuegangxiao0117/smart_garden_for_exhibition/blob/master/images/chongqingEEE2.png)
 *手机端显示 showing on the phone*
 
 ## 教程
