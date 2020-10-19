@@ -1,0 +1,14 @@
+{
+    "data": {
+        "items": [
+            {
+                "device_trackers": [],
+                "id": "dfrobot",
+                "name": "dfrobot",
+                "user_id": "ec9c0aee92f54eea88bcd0c098700933"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 2
+}

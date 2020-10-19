@@ -1,0 +1,30 @@
+{
+    "data": {
+        "deleted_devices": [],
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d8ba0998e2fc49daaeb94f5128d9819a"
+                ],
+                "connections": [],
+                "entry_type": "service",
+                "id": "58e830ea3d2b4b95bd90495f6bc5bed3",
+                "identifiers": [
+                    [
+                        "hacs",
+                        "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+                    ]
+                ],
+                "manufacturer": "hacs.xyz",
+                "model": "",
+                "name": "HACS",
+                "name_by_user": null,
+                "sw_version": "1.6.0",
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

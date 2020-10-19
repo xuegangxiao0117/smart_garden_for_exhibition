@@ -1,0 +1,359 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+frontend:
+  themes: !include_dir_merge_named themes
+
+hacs:
+  token: 6d52f922cd11a7efefae8634bc747503f35b22ad
+
+homeassistant:
+  name: DFRobot
+  customize:
+    sensor.device1:
+      friendly_name: 设备1
+      icon: mdi:cloud-check
+    sensor.device1_battery:
+      friendly_name: 电池电量
+      icon: mdi:cloud-check
+
+    sensor.device2:
+      friendly_name: 设备2
+      icon: mdi:cloud-check
+    sensor.device3:
+      friendly_name: 设备3
+      icon: mdi:cloud-check
+    sensor.device4:
+      friendly_name: 设备4
+      icon: mdi:cloud-check
+    switch.foot_path_light:
+      friendly_name: 步道灯光
+      icon: mdi:lightbulb-on
+    switch.fan: 
+      friendly_name: 温室风扇
+      icon: mdi:fan
+    switch.pump:
+      friendly_name: 温室水泵 
+      icon: mdi:water-pump
+    sensor.weather_station_temperature:
+      friendly_name: 户外温度
+      icon: mdi:temperature-celsius
+    sensor.weather_station_humidity:
+      friendly_name: 户外湿度 
+      icon: mdi:water-percent
+    sensor.weather_station_uv:
+      friendly_name: 紫外光强度 
+      icon: mdi:sunglasses
+    sensor.weather_station_pressure:
+      friendly_name: 气压 
+      icon: mdi:airballoon
+    sensor.green_house_co2:
+      friendly_name: 温室二氧化碳浓度 
+      icon: mdi:periodic-table-co2
+    sensor.green_house_o2:
+      friendly_name: 温室氧气浓度
+    sensor.tds:
+      friendly_name: 水池总溶解固体 
+    sensor.pond_temperature:
+      friendly_name: 水池温度
+      icon: mdi:oil-temperature
+    sensor.soil_moisture:
+      friendly_name: 土壤湿度
+
+    sensor.usage:
+      friendly_name: 用电量* 
+      icon: mdi:factory
+
+    sensor.power:
+      friendly_name: 太阳能功率* 
+      icon: mdi:solar-power
+
+    sensor.wind_direction:
+      friendly_name: 风速* 
+      icon: mdi:weather-windy
+    sensor.wind_speed:
+      friendly_name: 风向* 
+      icon: mdi:sign-direction
+
+    sensor.O3:
+      friendly_name: 臭氧* 
+
+    sensor.lightning:
+      friendly_name: 闪电* 
+      icon: mdi:weather-lightning
+
+    sensor.foot_path_ambient_light:
+      friendly_name: 步道环境光
+      icon: mdi:theme-light-dark
+
+    sensor.foot_path_human:
+      friendly_name: 红外行人检测
+      icon: mdi:human-male
+    binary_sensor.window:
+      friendly_name: 窗户状态 
+      icon: mdi:shield-lock-outline
+    binary_sensor.door:
+      friendly_name: 门锁状态 
+      icon: mdi:door-closed
+
+    light.RGB_LED_strip: 
+      friendly_name: 氛围灯* 
+
+
+lovelace:
+  mode: yaml
+
+mqtt:
+  broker: 192.168.199.142
+  port: 1883
+  client_id: home-assistant-1
+  keepalive: 60
+
+
+sensor:
+
+  - platform: mqtt
+    state_topic: "/device1/status"
+    name: "device1"
+
+  - platform: mqtt
+    state_topic: "/device1/battery"
+    name: "device1_battery"
+
+  - platform: mqtt
+    state_topic: "/device2/status"
+    name: "device2"
+
+  - platform: mqtt
+    state_topic: "/device3/status"
+    name: "device3"
+
+  - platform: mqtt
+    state_topic: "/device4/status"
+    name: "device4"
+
+  - platform: mqtt
+    state_topic: "/weather_station/dht22/temperature"
+    unit_of_measurement: "°C"
+    name: "weather_station_temperature"
+
+  - platform: mqtt
+    state_topic: "/weather_station/dht22/humidity"
+    unit_of_measurement: "%"
+    name: "weather_station_humidity"
+
+  - platform: mqtt
+    state_topic: "/weather_station/UV"
+    unit_of_measurement: "mW/cm^2"
+    name: "weather_station_uv"
+
+  - platform: mqtt
+    state_topic: "/weather_station/BMP388/altitude"
+    unit_of_measurement: "m"
+    name: "weather_station_altitude"
+
+  - platform: mqtt
+    state_topic: "/weather_station/BMP388/pressure"
+    unit_of_measurement: "Pa"
+    name: "weather_station_pressure"
+
+
+  - platform: mqtt
+    state_topic: "/green_house/ccs811/co2"
+    unit_of_measurement: "PPM"
+    name: "green_house_co2"
+
+  - platform: mqtt
+    state_topic: "/green_house/ccs811/TVOC"
+    unit_of_measurement: "PPB"
+    name: "green_house_TVOC"
+
+  - platform: mqtt
+    state_topic: "/green_house/o2"
+    unit_of_measurement: "%vol"
+    name: "green_house_O2"
+
+  - platform: mqtt
+    state_topic: "/green_house/soil_moisture"
+    name: "soil_moisture"
+
+  - platform: mqtt
+    state_topic: "/water_quality/tds"
+    unit_of_measurement: "ppm"
+    name: "tds"
+
+  - platform: mqtt
+    state_topic: "/water_quality/ds18b20"
+    unit_of_measurement: "°C"
+    name: "pond_temperature"
+
+  - platform: mqtt
+    state_topic: "/foot_path/ambient_light"
+    unit_of_measurement: "lux"
+    name: foot_path_ambient_light
+
+  - platform: mqtt
+    state_topic: "/foot_path/human"
+    name: foot_path_human
+
+  - platform: mqtt
+    state_topic: "/home/door"
+    name: door
+
+  - platform: mqtt
+    state_topic: "/weather_station/power"
+    name: power
+
+  - platform: mqtt
+    state_topic: "/weather_station/usage"
+    name: usage
+
+  - platform: mqtt
+    state_topic: "/weather_station/wind_direction"
+    name: wind_direction
+
+  - platform: mqtt
+    state_topic: "/weather_station/wind_speed"
+    name: wind_speed
+
+  - platform: mqtt
+    state_topic: "/weather_station/O3"
+    name: O3
+
+  - platform: mqtt
+    state_topic: "/weather_station/lightning"
+    name: lightning
+
+
+binary_sensor:
+
+  - platform: mqtt
+    state_topic: "/binary_sensor/test"
+    name: test
+
+  - platform: mqtt
+    state_topic: "/home/window"
+    name: window
+
+
+
+  - platform: mqtt
+    state_topic: "/home/smoke"
+    name: smoke
+
+  - platform: mqtt
+    state_topic: "/battery1/charging"
+    name: battery_charging
+
+
+
+
+  - platform: mqtt
+    state_topic: "/foot_path/human2"
+    name: foot_path_human2
+
+  - platform: mqtt
+    state_topic: "/device/greenhouse"
+    name: door2
+
+
+  - platform: mqtt
+    name: "Window_Contact_Sensor"
+    state_topic: "home-assistant/window/contact"
+    payload_on: "ON"
+    availability:
+      - topic: "home-assistant/window/availability"
+        payload_available: "online"
+        payload_not_available: "offline"
+    qos: 0
+    device_class: connectivity
+
+  - platform: mqtt
+    name: "device_2_status"
+    state_topic: "smartgarden/device2"
+    payload_on: "ON"
+    availability:
+      - topic: "smartgarden/device2/availability"
+        payload_available: "online"
+        payload_not_available: "offline"
+    qos: 0
+
+
+#  - platform:
+#    state_topic:
+#    unit_of_measurement:
+#    name:
+
+switch:
+  - platform: mqtt
+    name: "pump"
+    command_topic: "/green_house/pump"
+    payload_on: "1"
+    payload_off: "0"
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "fan"
+    command_topic: "/green_house/fan"
+    payload_on: "1"
+    payload_off: "0"
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "foot_path_light"
+    command_topic: "/foot_path/light"
+    payload_on: "1"
+    payload_off: "0"
+    qos: 0
+    retain: true
+
+light:
+  - platform: mqtt
+    name: "RGB_LED_strip"
+    state_topic: "/rgb/strip_light/status"
+    command_topic: "/rgb/strip_light/switch"
+    rgb_state_topic: "/rgb/strip_light/status"
+    rgb_command_topic: "/rgb/strip_light/set"
+    rgb_value_template: "{{ value_json.rgb | join(',') }}"
+
+group:
+  green_house:
+    name: green_house
+    entities:
+      -sensor.green_house_co2
+      -sensor.soil_moisture
+      -sensor.green_house_TVOC
+
+  weather_station:
+    name: weather_station
+    entities:
+      -sensor.weather_station_temperature
+      -sensor.weather_station_humidity
+      -sensor.weather_station_uv
+
+  foot_path:
+    name: foot_path
+    entities:
+      -sensor.foot_path_light 
+      -switch.foot_path_light
+
+  pond:
+    name: pond
+    entities:
+      -sensor.pond_temperature
+      -sensor.tds
+
+
+
+

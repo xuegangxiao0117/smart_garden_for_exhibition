@@ -1,0 +1,11 @@
+2020-10-16 18:19:25 WARNING (SyncWorker_0) [homeassistant.util.yaml.loader] YAML file /config/configuration.yaml contains duplicate key "group". Check lines 8 and 329
+2020-10-16 18:19:25 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-10-16 18:19:26 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs
+2020-10-16 18:19:27 ERROR (MainThread) [homeassistant.config] Invalid config for [group]: Entity ID -sensor.foot_path_light -switch.foot_path_light is an invalid entity id for dictionary value @ data['group']['foot_path']['entities']. Got '-sensor.foot_path_light -switch.foot_path_light'
+Entity ID -sensor.green_house_co2 -sensor.soil_moisture -sensor.green_house_TVOC is an invalid entity id for dictionary value @ data['group']['green_house']['entities']. Got '-sensor.green_house_co2 -sensor.soil_moisture -sensor.green_house_TVOC'
+Entity ID -sensor.pond_temperature -sensor.tds is an invalid entity id for dictionary value @ data['group']['pond']['entities']. Got '-sensor.pond_temperature -sensor.tds'
+Entity ID -sensor.weather_station_temperature -sensor.weather_station_humidity -sensor.weather_station_uv is an invalid entity id for dictionary value @ data['group']['weather_station']['entities']. Got '-sensor.weather_station_temperature -sensor.weather_station_humidity -sensor.weather_station_uv'. (See /config/configuration.yaml, line 330). Please check the docs at https://www.home-assistant.io/integrations/group
+2020-10-16 18:19:27 ERROR (MainThread) [homeassistant.setup] Setup failed for group: Invalid config.
+2020-10-16 18:20:27 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: mqtt
+2020-10-16 18:20:27 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: timed out
+2020-10-16 18:20:32 ERROR (MainThread) [custom_components.hacs.factory] maykar/custom-header - Repository is archived.

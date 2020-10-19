@@ -1,0 +1,101 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-10-16T10:22:23.337939+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "dfrobot",
+                    "id": "dfrobot",
+                    "user_id": "ec9c0aee92f54eea88bcd0c098700933"
+                },
+                "context": {
+                    "id": "363160e70f9911ebbd3bff57ff1363fd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.dfrobot",
+                "last_changed": "2020-10-16T10:19:26.726147+00:00",
+                "last_updated": "2020-10-16T10:20:27.855099+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-10-16T10:22:23.337939+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "\u6e29\u5ba4\u6c34\u6cf5",
+                    "icon": "mdi:water-pump"
+                },
+                "context": {
+                    "id": "3630fa330f9911eb8e84d3ebdd659be6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.pump",
+                "last_changed": "2020-10-16T10:20:27.852474+00:00",
+                "last_updated": "2020-10-16T10:20:27.852474+00:00",
+                "state": "unavailable"
+            }
+        },
+        {
+            "last_seen": "2020-10-16T10:22:23.337939+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "\u6e29\u5ba4\u98ce\u6247",
+                    "icon": "mdi:fan"
+                },
+                "context": {
+                    "id": "363103f30f9911eb9bdced833e40a18b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.fan",
+                "last_changed": "2020-10-16T10:20:27.852722+00:00",
+                "last_updated": "2020-10-16T10:20:27.852722+00:00",
+                "state": "unavailable"
+            }
+        },
+        {
+            "last_seen": "2020-10-16T10:22:23.337939+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "\u6b65\u9053\u706f\u5149",
+                    "icon": "mdi:lightbulb-on"
+                },
+                "context": {
+                    "id": "36310d1c0f9911ebb202ef590be4e480",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.foot_path_light",
+                "last_changed": "2020-10-16T10:20:27.852955+00:00",
+                "last_updated": "2020-10-16T10:20:27.852955+00:00",
+                "state": "unavailable"
+            }
+        },
+        {
+            "last_seen": "2020-10-16T10:22:23.337939+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "\u6c1b\u56f4\u706f*",
+                    "supported_features": 17
+                },
+                "context": {
+                    "id": "363122cb0f9911eb9b66e37019eeec5b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "light.rgb_led_strip",
+                "last_changed": "2020-10-16T10:20:27.853519+00:00",
+                "last_updated": "2020-10-16T10:20:27.853519+00:00",
+                "state": "unavailable"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

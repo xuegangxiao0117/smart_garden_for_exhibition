@@ -1,0 +1,72 @@
+{
+    "data": {
+        "entities": [
+            {
+                "capabilities": {},
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.updater",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "Updater",
+                "platform": "updater",
+                "supported_features": 0,
+                "unique_id": "updater",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": {},
+                "config_entry_id": null,
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.dfrobot",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "dfrobot",
+                "platform": "person",
+                "supported_features": 0,
+                "unique_id": "dfrobot",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": {},
+                "config_entry_id": "09cb321fd9ff47b4ab30c962248bf04a",
+                "device_class": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "weather.home",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "DFRobot",
+                "platform": "met",
+                "supported_features": 0,
+                "unique_id": "home",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": "d8ba0998e2fc49daaeb94f5128d9819a",
+                "device_class": null,
+                "device_id": "58e830ea3d2b4b95bd90495f6bc5bed3",
+                "disabled_by": null,
+                "entity_id": "sensor.hacs",
+                "icon": null,
+                "name": null,
+                "original_icon": "hacs:hacs",
+                "original_name": "hacs",
+                "platform": "hacs",
+                "supported_features": 0,
+                "unique_id": "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd",
+                "unit_of_measurement": "pending update(s)"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

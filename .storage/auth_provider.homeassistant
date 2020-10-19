@@ -1,0 +1,12 @@
+{
+    "data": {
+        "users": [
+            {
+                "password": "JDJiJDEyJEMuaUZkQndvMGVDQlFYYmhlYlhkYi5SYUNDbUVPb0lLeVhpM2F5R2FTYlRFRWVzMm9XTWF5",
+                "username": "dfrobot"
+            }
+        ]
+    },
+    "key": "auth_provider.homeassistant",
+    "version": 1
+}

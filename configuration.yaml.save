@@ -1,0 +1,23 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+#default_config:
+
+# Text to speech
+#tts:
+#  - platform: google_translate
+
+#group: !include groups.yaml
+#automation: !include automations.yaml
+#script: !include scripts.yaml
+#scene: !include scenes.yaml
+homeassistant:
+  name: DFRobot
+  unit_system: metric
+  time_zone: Asia/Shanghai
+
+lovelace:
+  mode: yaml 
+
+
+mqtt:
+  broker: docker run -d --name="home-assistant" -v /PATH_TO_YOUR_CONFIG:/config -v /etc/localtime:/etc/localtime:ro --net=host homeassistant/home-assistant:stable

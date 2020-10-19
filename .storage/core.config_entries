@@ -1,0 +1,63 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "track_home": true
+                },
+                "domain": "met",
+                "entry_id": "09cb321fd9ff47b4ab30c962248bf04a",
+                "options": {},
+                "source": "onboarding",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "a05f199c4f0e46e8917be976d3616486",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "configuration.yaml",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "token": "6d52f922cd11a7efefae8634bc747503f35b22ad"
+                },
+                "domain": "hacs",
+                "entry_id": "d8ba0998e2fc49daaeb94f5128d9819a",
+                "options": {
+                    "appdaemon": false,
+                    "country": "ALL",
+                    "debug": false,
+                    "experimental": false,
+                    "netdaemon": false,
+                    "release_limit": 5,
+                    "sidepanel_icon": "hacs:hacs",
+                    "sidepanel_title": "HACS"
+                },
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "",
+                "unique_id": null,
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

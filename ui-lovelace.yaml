@@ -1,0 +1,416 @@
+resources:
+  - url: /local/mini-graph-card-bundle.js?v=0.9.4
+    type: module
+  - url: /hacsfiles/button-card/button-card.js
+    type: module
+  - url: /hacsfiles/button-text-card/button-text-card.js
+    type: module
+  - url: /hacsfiles/rgb-light-card/card.js
+    type: module
+
+title: 蘑菇云
+views:
+  - icon: mdi:home
+    id: home
+    title: Home
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: picture
+            image: /local/images/DFRobot Logo/蘑菇云logo2.jpg
+       
+          - type: horizontal-stack
+            cards:
+              - type: gauge
+                name: 户外湿度
+                unit: '%'
+                entity: sensor.weather_station_humidity
+                severity:
+                  green: 0
+                  yellow: 45
+                  red: 85
+
+              - type: gauge
+                name: 设备1电池电量
+                unit: '%'
+                entity: sensor.device1_battery
+                severity:
+                  green: 0
+                  yellow: 45
+                  red: 85
+
+
+          - type: glance
+            title: 无线设备状态
+            entities:
+              - sensor.device1
+              - sensor.device2
+              - sensor.device3
+              - sensor.device4
+
+          - type: custom:mini-graph-card
+            name: 历史信息
+            entities:
+              - entity: sensor.green_house_o2
+              - entity: sensor.green_house_co2
+              - color: gray
+                entity: input_number.nighttime
+                name: Night
+                show_line: false
+                show_points: false
+                show_legend: false
+                y_axis: secondary
+            show:
+              labels: true
+              labels_secondary: true
+
+
+
+
+      - type: vertical-stack
+        cards:
+
+          - type: "custom:button-text-card"
+            large: true
+            entity: sensor.door
+            title: 前门未关!
+            background_color: "#A81419"
+            font_color: "#fff"
+            icon: mdi:door-open
+            hide_condition: |
+                  [[[ return entity.state === "OFF" ]]]
+
+          - type: markdown
+            title: 欢迎来到智慧家园  
+            content: >
+             
+               Powered by DFRobot and HA
+
+
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: light.rgb_led_strip
+              - type: 'custom:rgb-light-card'
+                entity: light.rgb_led_strip
+                colors:
+                  - rgb_color:
+                        - 255
+                        - 248
+                        - 176
+                  - rgb_color:
+                        - 144
+                        - 178
+                        - 236
+                  - rgb_color:
+                        - 241
+                        - 165
+                        - 203
+                  - rgb_color:
+                        - 119
+                        - 226
+                        - 138
+
+
+
+          - type: glance
+            title: 概览
+            entities:
+              - switch.pump
+              - switch.fan
+              - switch.foot_path_light
+              - sensor.foot_path_human
+              - binary_sensor.window
+
+
+
+
+
+
+          - type: horizontal-stack
+            cards:
+
+              - type: custom:mini-graph-card
+                entities:
+                  - sensor.weather_station_temperature
+                line_color: blue
+                line_width: 8
+                font_size: 75
+          
+              - type: custom:mini-graph-card
+                entities:
+                  - sensor.weather_station_humidity
+                line_color: '#e74c3c'
+                line_width: 8
+                font_size: 75
+
+              - type: custom:mini-graph-card
+                entities:
+                 - sensor.weather_station_uv
+                line_color: var(--accent-color)
+                line_width: 8
+                font_size: 75
+
+          - type: custom:mini-graph-card
+            entities:
+              - sensor.usage
+
+ 
+
+
+      
+      - type: vertical-stack
+        cards: 
+          - type: entities
+            title: 开关
+            entities:
+              - entity: switch.foot_path_light
+              - entity: switch.fan
+              - entity: switch.pump
+
+      - type: vertical-stack
+        cards: 
+          - type: entities
+            title: 传感器
+            entities: 
+              - entity: sensor.weather_station_pressure
+                unit: 'pa'
+              - entity: sensor.tds
+              - entity: sensor.foot_path_ambient_light
+              - entity: sensor.green_house_o2
+              - entity: sensor.green_house_co2
+              - entity: sensor.soil_moisture
+
+          - type: custom:mini-graph-card
+            entities:
+              - entity: sensor.power
+            hours_to_show: 168
+            aggregate_func: max
+            group_by: date
+            show:
+              graph: bar
+
+
+
+
+
+
+
+  - icon: mdi:weather-cloudy
+    title: weather station 
+    cards:
+
+      - type: vertical-stack
+        cards: 
+        - type: markdown 
+          title: 气象站
+          content: >
+
+              **DFRobot还有许多其他的传感器可以用于监测环境天气，比如风速，风向，臭氧，雷电，空气质量等。结合太阳能管理模块和太阳能板，学生老师可以自己根据自己的需求来DIY一个小型太阳能气象站。**
+
+        - type: picture
+          image: /local/images/DFRobot Logo/3.jpg
+
+
+        - type: custom:mini-graph-card
+          name: 历史信息
+          entities:
+            - entity: sensor.weather_station_temperature
+            - entity: sensor.weather_station_humidity
+            - entity: sensor.wind_speed
+            - color: gray
+              entity: input_number.nighttime
+              name: Night
+              show_line: false
+              show_points: false
+              show_legend: false
+              y_axis: secondary
+          show:
+            labels: true
+            labels_secondary: true
+
+      - type: vertical-stack
+        cards:
+
+        - type: "custom:button-text-card"
+          large: true
+          entity: sensor.door
+          title: 电量充足
+          background_color: "#5BC236"
+          font_color: "#fff"
+          icon: mdi:battery-90
+
+        - type: glance
+          title: 气象信息概览
+          entities:
+            - sensor.weather_station_uv
+            - sensor.weather_station_pressure
+            - sensor.wind_direction
+            - sensor.wind_speed
+            - sensor.lightning
+
+        - type: entities
+          title: 传感器
+          entities: 
+            - entity: sensor.weather_station_pressure
+            - entity: sensor.weather_station_uv
+            - entity: sensor.weather_station_humidity
+            - entity: sensor.weather_station_temperature
+
+
+
+  - icon: mdi:flower 
+    title: green house
+    cards:
+
+      - type: vertical-stack
+        cards: 
+        - type: markdown 
+          title: 温室
+          content: >
+
+              **DFRobot还有许多其他的传感器可以用于监测环境天气，比如风速，风向，臭氧，雷电，空气质量等。结合太阳能管理模块和太阳能板，学生老师可以自己根据自己的需求来DIY一个小型太阳能气象站。**
+
+        - type: picture
+          image: /local/images/DFRobot Logo/3.jpg
+
+
+        - type: custom:mini-graph-card
+          name: 历史信息
+          entities:
+            - entity: sensor.weather_station_temperature
+            - entity: sensor.weather_station_humidity
+            - entity: sensor.wind_speed
+            - color: gray
+              entity: input_number.nighttime
+              name: Night
+              show_line: false
+              show_points: false
+              show_legend: false
+              y_axis: secondary
+          show:
+            labels: true
+            labels_secondary: true
+
+      - type: markdown 
+        title: green house
+        content: >
+       
+          Green House Description
+
+      - type: "custom:button-card"
+        name: window status
+        entity: binary_sensor.window
+
+      - type: "custom:button-card"
+        name: window status
+        entity: binary_sensor.door
+        retain: false
+
+      - type: "custom:button-card"
+        name: smoke detected
+        entity: binary_sensor.smoke
+       
+      - type: "custom:button-card"
+        name: battery charging
+        entity: binary_sensor.battery_charging
+        icon: mdi:battery-charging
+
+      - type: 'custom:button-text-card'
+        title: Title
+        subtitle: Subtitle
+        icon: 'mdi:lightbulb-outline'
+       
+
+      - type: "custom:button-card"
+        entity: switch.fan
+        icon: mdi:air-conditioner
+        color: rgb(28, 128, 199)
+
+
+  - icon: mdi:walk 
+    title: foot path 
+    cards:
+      - type: markdown 
+        title: foot path
+        content: >
+       
+          Foot Path Description
+
+      - type: button
+        name: device status
+        entity: sensor.weather_station_uv
+
+      - type: "custom:button-text-card"
+        title: device 1 Battry 
+        subtitle: weather station
+        icon: mdi:battery-high
+        large: true
+
+      - type: "custom:button-text-card"
+        title: device 2 Battry 
+        subtitle: green house
+        icon: mdi:battery-high
+        large: true
+
+      - type: "custom:button-text-card"
+        large: true
+        entity: sensor.device1
+        title: Front door open!
+        background_color: "#A81419"
+        font_color: "#fff"
+        icon: mdi:door-open
+        hide_condition: |
+          [[[ return entity.state === "off" ]]]
+
+
+
+
+  - icon: mdi:fish
+    title: pond 
+    cards:
+      - type: markdown 
+        title: pond
+        content: >
+       
+          Pond Description
+
+      - type: "custom:button-card"
+        entity: binary_sensor.Window_Contact_Sensor
+        color_type: card
+        color: auto
+        name: 300px_binary_sensor
+        styles:
+        card:
+          - height: 300px
+
+      - type: horizontal-stack
+        cards:
+        - type: "custom:button-card"
+          entity: switch.pump
+
+
+      - type: custom:mini-graph-card
+        entities:
+          - sensor.weather_station_temperature
+        show:
+          labels: true
+        color_thresholds:
+          - value: 24
+            color: "#f39c12"
+          - value: 25
+            color: "#d35400"
+          - value: 26
+            color: "#c0392b"
+        hours_to_show: 1
+
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.soil_moisture
+        name: Energy consumption
+        hours_to_show: 168
+        aggregate_func: max
+        group_by: date
+        show:
+          graph: bar
+
